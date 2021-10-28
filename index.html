@@ -1,0 +1,64 @@
+<link rel="stylesheet" href="index.css" />
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="center">Urbec.id Survey Form</h1>
+    <p id="description" class="desc-center">Terimakasih Sudah Meluangkan Waktu Untuk Membantu Kami Agar Lebih Baik</p>
+  </header>
+  <form id="survey-form">
+    <div class="form-grp">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" name="name" id="name" class="form-ctrl" placeholder="Enter your name" required />
+    </div>
+    <div class="form-grp">
+      <label id="email-label" for="email">Email</label>
+      <input type="text" name="email" id="email" class="form-ctrl" placeholder="Enter your email" required />
+    </div>
+    <div class="form-grp">
+      <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+      <input type="number" name="age" id="number" min="5" max="99" class="form-ctrl" placeholder="Age" />
+    </div>
+    <div class="form-grp">
+      <p>Kesibukan Saat ini</p>
+      <select id="dropdown" name="role" class="form-ctrl" required>
+        <option disabled selected value>Pilih dibawah</option>
+        <option value="pelajar">Pelajar</option>
+        <option value="mahasiswa">Mahasiswa</option>
+        <option value="bekerja">Bekerja</option>
+        <option value="freelancer">Freelancer</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-grp">
+      <p>Apakah konten Urbec.id sudah menarik?</p>
+      <label><input name="user-choose" value="sudah" type="radio" class="input-radio" checked />Sudah menarik</label>
+      <label><input name="user-choose" value="kurang" type="radio" class="input-radio" checked />Kurang menarik</label>
+      <label><input name="user-choose" value="tidak" type="radio" class="input-radio" checked />Tidak menarik</label>
+    </div>
+
+    <div class="form-grp">
+      <p>Konten Urbec.id apa yang anda suka saat ini?</p>
+      <select id="konten" name="kontens" class="form-ctrl" required>
+        <option disabled selected value>Pilih dibawah</option>
+        <option value="markita">Mari Kita Tanya</option>
+        <option value="tts">Talk To Stranger</option>
+      </select>
+    </div>
+
+    <div class="form-grp">
+      <p>Konten seperti apa yang anda inginkan di Urbec.id?<span class="clue">(check sebelum memilih)</span></p>
+      <label><input name="prefer" value="blind-date" type="checkbox" class="input-checkbox" />Blind Date</label>
+      <label><input name="prefer" value="storytell" type="checkbox" class="input-checkbox" />Storytell</label>
+      <label><input name="prefer" value="podcast" type="checkbox" class="input-checkbox" />Podcast</label>
+    </div>
+
+    <div class="form-grp">
+      <p>Masukkan komen atau saran?</p>
+      <textarea id="komen" class="input-textarea" name="komens" placeholder="Isi Masukkan kamu disini..."></textarea>
+    </div>
+
+    <div class="form-grp">
+      <button type="submit" id="submit" class="submit-btn">Submit</button>
+    </div>
+  </form>
+</div>
